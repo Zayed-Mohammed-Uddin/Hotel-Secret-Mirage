@@ -49,7 +49,8 @@
         audio {
             display: none;
         }
-/*      
+
+        /*      
         body{
             overflow:hidden;
         }
@@ -96,8 +97,7 @@
     <!-- ====== CSS END   ====== -->
 </head>
 
-<body id="body" data-bs-spy="scroll" data-bs-target="#hotel-navbar" data-bs-offset="0"
-    tabindex="0">
+<body id="body" data-bs-spy="scroll" data-bs-target="#hotel-navbar" data-bs-offset="0" tabindex="0">
     <!-- <div id="loader" class="d-flex align-items-center justify-content-center">
         <img src="./Images/Icons/logo4.png" alt="logo">
         <h4>Secret<span>Mirage</span></h4>
@@ -1398,12 +1398,13 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="reservation-form">
-                                    <form class="form-control mb-5" action="#" method="post">
+                                    <form class="form-control mb-5" action="https://formspree.io/f/mleapllv"
+                                        method="POST">
                                         <label class="mb-2" for="date">Date</label>
                                         <input class="form-control mb-3" aria-label="form_date" type="date" name="date"
-                                            id="date">
+                                            id="date" required>
                                         <label class="mb-2" for="time">Time</label>
-                                        <select name="time" id="time" class="form-select mb-3" aria-label="form_select">
+                                        <select name="time" id="time" class="form-select mb-3" aria-label="form_select" required>
                                             <option selected>Choose Your Suitable Time</option>
                                             <option value="0">5.00 A.M.</option>
                                             <option value="1">5.30 A.M.</option>
@@ -1445,7 +1446,7 @@
                                             <option value="37">11.30 P.M.</option>
                                         </select>
                                         <label class="mb-2" for="location">Location</label>
-                                        <select name="location" id="location" class="form-select mb-3">
+                                        <select name="location" id="location" class="form-select mb-3" required>
                                             <option value="0" selected>Choose Your Convenient Location</option>
                                             <option value="1">Secret Mirage - Alaska</option>
                                             <option value="2">Secret Mirage - Washington D.C.</option>
@@ -1467,7 +1468,7 @@
                                             <option value="18">Secret Mirage - Boston</option>
                                         </select>
                                         <label class="mb-2" for="booking">Reservation</label>
-                                        <select name="booking" id="booking" class="form-select mb-3">
+                                        <select name="booking" id="booking" class="form-select mb-3" required>
                                             <option value="0" selected>Choose Your Reservation Space</option>
                                             <option value="1">1 Person</option>
                                             <option value="2">2 Persons</option>
@@ -1489,16 +1490,17 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="reservation-form">
-                                    <form class="form-control mb-5" action="#" method="post">
+                                    <form class="form-control mb-5" action="https://formspree.io/f/mleapllv"
+                                        method="POST">
                                         <label class="mb-2" for="name">Name</label>
                                         <input class="form-control mb-3" type="text" name="text" id="name"
-                                            placeholder="Your Name">
+                                            placeholder="Your Name" required>
                                         <label class="mb-2" for="email">E-mail</label>
                                         <input class="form-control mb-3" type="email" name="email" id="email"
-                                            placeholder="Your E-mail">
+                                            placeholder="Your E-mail" required>
                                         <label class="mb-2" for="cell">Phone</label>
                                         <input class="form-control mb-3" type="number" name="cell" id="cell"
-                                            placeholder="Your Cell No">
+                                            placeholder="Your Cell No" required>
                                         <label class="mb-2" for="message">Reservation Info <small class="text-muted"
                                                 style="font-size: 0.795em;">(Optional)</small></label>
                                         <textarea class="form-control mb-3" name="Reservation Info"
@@ -1511,7 +1513,9 @@
                     </div>
                     <div class="col-md-12">
                         <div class="reservation-button mb-5">
-                            <button class="btn-lg reservation-btn w-100">Make a reservation</button>
+                            <form action="https://formspree.io/f/mleapllv" method="POST">
+                                <button type="submit" class="btn-lg reservation-btn w-100">Make a reservation</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -1551,13 +1555,13 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <form class="get-in-touch-form" action="#" method="post">
-                            <input class="form-control mt-4" type="text" name="text" id="text" placeholder="Name">
-                            <input class="form-control mt-4" type="email" name="email" id="email" placeholder="E-mail">
+                        <form class="get-in-touch-form" action="https://formspree.io/f/mleapllv" method="POST">
+                            <input class="form-control mt-4" type="text" name="text" id="text" placeholder="Name" required>
+                            <input class="form-control mt-4" type="email" name="email" id="email" placeholder="E-mail" required>
                             <input class="form-control mt-4" type="number" name="number" id="number"
-                                placeholder="Phone">
+                                placeholder="Phone" required>
                             <textarea class="form-control mt-4" name="textarea" id="textarea" cols="30" rows="8"
-                                placeholder="Message" style="resize: none;"></textarea>
+                                placeholder="Message" style="resize: none;" required></textarea>
                             <div class="get-in-touch-button">
                                 <center><button type="submit"
                                         class="btn-lg get-in-touch-btn mt-4 mb-4 px-5">Send</button></center>
@@ -1740,17 +1744,18 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="newsletter">
-                                    <form class="form-control pt-3" action="#" method="post"
+                                    <form class="form-control pt-3" action="https://formspree.io/f/mleapllv"
+                                        method="POST"
                                         style="background-color: #191919;border-color:var(--primaryColor);">
                                         <label for="n_name" class="mb-2"
                                             style="color:var(--primaryColor); font-weight:700;">Name</label>
                                         <input class="form-control mb-2" type="text" name="n_name" id="n_name"
-                                            placeholder="Your Name">
+                                            placeholder="Your Name" required>
                                         <label for="n_email" class="mb-2"
                                             style="color:var(--primaryColor); font-weight:700;">E-mail</label>
                                         <input class="form-control" type="n_email" name="n_email" id="n_email"
-                                            placeholder="Your E-mail">
-                                        <button type="button" class="btn btn-newsletter w-100 my-3">Subscribe</button>
+                                            placeholder="Your E-mail" required>
+                                        <button type="submit" class="btn btn-newsletter w-100 my-3">Subscribe</button>
                                     </form>
                                 </div>
                             </div>
@@ -1831,12 +1836,63 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf4GCkYFnkkKxilolpJYPbE2IsYJ66CBs&callback=initMap">
     </script>
 
+    <!-- FORMSPREE API -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+
     <script>
         new WOW().init();
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
+        /* paste this in verbatim */
+        window.formbutton = window.formbutton || function () {
+            (formbutton.q = formbutton.q || []).push(arguments);
+        };
+
+        /* customize formbutton here*/
+        formbutton("create", {
+            action: "https://formspree.io/f/mleapllv",
+            theme: "classic",
+            title: "How can we help?",
+            description: "Good Day",
+            fields: [{
+                    type: "email",
+                    label: "Email:",
+                    name: "email",
+                    required: true,
+                    placeholder: "your@email.com"
+                },
+                {
+                    type: "textarea",
+                    label: "Message:",
+                    name: "message",
+                    required: true,
+                    placeholder: "What's on your mind?"
+                },
+                {
+                    type: "submit"
+                }
+            ],
+            styles: {
+
+                fontFamily: '"Playball", cursive',
+                description:{
+                    textAlign: "center",
+                    fontWeight: "bold"
+                },
+                title: {
+                    background: "#C4001A",
+                    letterSpacing: "0.05em",
+                    textTransform: "capitalize",
+                    fontSize:"20px"
+                },
+                button: {
+                    backgroundColor: "(--bs-danger)"
+                }
+            },
+            initiallyVisible: true
+        });
     </script>
     <!-- ====== SCRIPT END   ====== -->
 </body>
