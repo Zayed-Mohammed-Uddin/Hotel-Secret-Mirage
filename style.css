@@ -2045,6 +2045,7 @@ h1:nth-of-type(3) {
 .footer {
     position: relative;
     background-color: #191919;
+    font-family: 'Poppins';
 }
 
 .copyright {
