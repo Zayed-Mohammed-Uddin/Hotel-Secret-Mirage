@@ -670,6 +670,7 @@
 .opening-hours h1:nth-of-type(1) {
     color: #fff;
     margin-bottom: 15px;
+    font-family: 'Poppins';
 }
 
 .opening-hours h1:nth-of-type(2) {
