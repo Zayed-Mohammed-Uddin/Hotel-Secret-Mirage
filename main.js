@@ -132,3 +132,12 @@ function initMap() {
 //     document.getElementById("body").style.overflow = "visible";
 //     document.getElementById("whole__section").style.visibility = "visible";
 // }
+
+// FakeLoader
+$(document).ready(function () {
+    $.fakeLoader({
+        timeToHide: 6000,
+        bgColor: "#C59D5F",
+        spinner: "spinner1"
+    });
+});

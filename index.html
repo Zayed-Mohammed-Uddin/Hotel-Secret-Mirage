@@ -32,6 +32,9 @@
     <link rel="stylesheet" href="./Assets/animate.min.css" />
     <link rel="stylesheet" href="./Assets/WOW-master/css/libs/animate.css" />
 
+    <!-- Fakeloader CSS -->
+    <link rel="stylesheet" href="./Assets/fakeLoader.js-2.0.0/dist/fakeLoader.min.css">
+
     <!-- STYLE CSS -->
     <link rel="stylesheet" type="text/css" href="./style.css">
     <style>
@@ -102,6 +105,10 @@
         <img src="./Images/Icons/logo4.png" alt="logo">
         <h4>Secret<span>Mirage</span></h4>
     </div> -->
+    <div class="fakeLoader"></div>
+    <audio loop autoplay>
+        <source src="./Audio/Gabriel Light - All the stars (official audio 2020).mp3" type="audio/mp3">
+    </audio>
     <section id="whole__section">
         <!-- ====== NAVBAR START ====== -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-nav autohide" id="hotel-navbar">
@@ -143,16 +150,13 @@
             </div>
         </nav>
         <!-- ====== NAVBAR END   ====== -->
-        <audio loop autoplay>
-            <source src="./Audio/Gabriel Light - All the stars (official audio 2020).mp3" type="audio/mp3">
-        </audio>
         <!-- ====== SECTION - 1 START ====== -->
-        <section class="home-page wow fadeInLeftBig" id="home" data-wow-duration="3s">
+        <section class="home-page wow fadeInLeftBig" id="home" data-wow-duration="2s" data-wow-delay="6s">
             <div class="slider-title">
                 <img src="./Images/Icons/color-seperator.png" alt="color seperator">
                 <br><br>
-                <h1>Welcome to Secret Mirage</h1>
-                <p>One of the most reputed hotel in the town</p>
+                <h1 class="wow animated fadeInLeft" data-wow-duration="2s" data-wow-delay="8s">Welcome to Secret Mirage</h1>
+                <p class="wow animated fadeInLeft" data-wow-duration="2s" data-wow-delay="8.3s">One of the most reputed hotel in the town</p>
                 <br>
                 <div class="star-icon">
                     <i class="fas fa-star custom-star-icon"></i>
@@ -1404,7 +1408,8 @@
                                         <input class="form-control mb-3" aria-label="form_date" type="date" name="date"
                                             id="date" required>
                                         <label class="mb-2" for="time">Time</label>
-                                        <select name="time" id="time" class="form-select mb-3" aria-label="form_select" required>
+                                        <select name="time" id="time" class="form-select mb-3" aria-label="form_select"
+                                            required>
                                             <option selected>Choose Your Suitable Time</option>
                                             <option value="0">5.00 A.M.</option>
                                             <option value="1">5.30 A.M.</option>
@@ -1556,10 +1561,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <form class="get-in-touch-form" action="https://formspree.io/f/mleapllv" method="POST">
-                            <input class="form-control mt-4" type="text" name="text" id="text" placeholder="Name" required>
-                            <input class="form-control mt-4" type="email" name="email" id="email" placeholder="E-mail" required>
-                            <input class="form-control mt-4" type="number" name="number" id="number"
-                                placeholder="Phone" required>
+                            <input class="form-control mt-4" type="text" name="text" id="text" placeholder="Name"
+                                required>
+                            <input class="form-control mt-4" type="email" name="email" id="email" placeholder="E-mail"
+                                required>
+                            <input class="form-control mt-4" type="number" name="number" id="number" placeholder="Phone"
+                                required>
                             <textarea class="form-control mt-4" name="textarea" id="textarea" cols="30" rows="8"
                                 placeholder="Message" style="resize: none;" required></textarea>
                             <div class="get-in-touch-button">
@@ -1812,6 +1819,9 @@
     <!-- jQUERY  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!-- Fakeloader JS -->
+    <script src="./Assets/fakeLoader.js-2.0.0/dist/fakeLoader.min.js"></script>
+
     <!-- SMOOTH SCROLLING EFFECT -->
     <script src="./Assets/smooth-scrollbar-develop/dist/smooth-scrollbar.js"></script>
 
@@ -1877,7 +1887,7 @@
             styles: {
 
                 fontFamily: '"Playball", cursive',
-                description:{
+                description: {
                     textAlign: "center",
                     fontWeight: "bold"
                 },
@@ -1885,7 +1895,7 @@
                     background: "#C4001A",
                     letterSpacing: "0.05em",
                     textTransform: "capitalize",
-                    fontSize:"20px"
+                    fontSize: "20px"
                 },
                 button: {
                     backgroundColor: "(--bs-danger)"
