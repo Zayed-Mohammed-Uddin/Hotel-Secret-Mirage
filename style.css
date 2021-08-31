@@ -73,13 +73,20 @@
     width: 100%;
     z-index: 1030;
 }
-
+.modal{
+    z-index:10000000010 !important;
+}
 /* NAVBAR START */
+.main_nav {
+    width: 100%;
+    z-index: 9999999999;
+    border-bottom: 2px solid var(--primaryColor);
+}
+
 .custom-nav {
     font-family: var(--primaryFontFamily);
     font-weight: 500;
     padding: 19.1px 35px;
-    border-bottom: 2px solid var(--primaryColor);
 }
 
 .logo {
