@@ -1494,43 +1494,46 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-header text-start mb-4">
-                                    <h4>CONTACT DETAILS</h4>
+                    <!-- <form action="https://formspree.io/f/mleapllv" method="POST"> -->
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-header text-start mb-4">
+                                        <h4>CONTACT DETAILS</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="reservation-form">
-                                    <form class="form-control mb-5" action="https://formspree.io/f/mleapllv"
-                                        method="POST">
-                                        <label class="mb-2" for="name">Name</label>
-                                        <input class="form-control mb-3" type="text" name="text" id="name"
-                                            placeholder="Your Name" required>
-                                        <label class="mb-2" for="email">E-mail</label>
-                                        <input class="form-control mb-3" type="email" name="email" id="email"
-                                            placeholder="Your E-mail" required>
-                                        <label class="mb-2" for="cell">Phone</label>
-                                        <input class="form-control mb-3" type="number" name="cell" id="cell"
-                                            placeholder="Your Cell No" required>
-                                        <label class="mb-2" for="message">Reservation Info <small class="text-muted"
-                                                style="font-size: 0.795em;">(Optional)</small></label>
-                                        <textarea class="form-control mb-3" name="Reservation Info"
-                                            id="Reservation Info" cols="1" rows="1" style="resize: none;"
-                                            placeholder="Reservation Info"></textarea>
-                                    </form>
+                                <div class="col-md-12">
+                                    <div class="reservation-form">
+                                        <form class="form-control mb-5" action="https://formspree.io/f/mleapllv"
+                                            method="POST">
+                                            <label class="mb-2" for="name">Name</label>
+                                            <input class="form-control mb-3" type="text" name="text" id="name"
+                                                placeholder="Your Name" required>
+                                            <label class="mb-2" for="email">E-mail</label>
+                                            <input class="form-control mb-3" type="email" name="email" id="email"
+                                                placeholder="Your E-mail" required>
+                                            <label class="mb-2" for="cell">Phone</label>
+                                            <input class="form-control mb-3" type="number" name="cell" id="cell"
+                                                placeholder="Your Cell No" required>
+                                            <label class="mb-2" for="message">Reservation Info <small class="text-muted"
+                                                    style="font-size: 0.795em;">(Optional)</small></label>
+                                            <textarea class="form-control mb-3" name="Reservation Info"
+                                                id="Reservation Info" cols="1" rows="1" style="resize: none;"
+                                                placeholder="Reservation Info"></textarea>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="reservation-button mb-5">
-                            <form action="https://formspree.io/f/mleapllv" method="POST">
-                                <button type="submit" class="btn-lg reservation-btn w-100">Make a reservation</button>
-                            </form>
+                        <div class="col-md-12">
+                            <div class="reservation-button mb-5">
+                                <form action="https://formspree.io/f/mleapllv" method="POST">
+                                    <button type="submit" class="btn-lg reservation-btn w-100" disabled>Make a
+                                        reservation</button>
+                                </form>
+                            </div>
                         </div>
-                    </div>
+                    <!-- </form> -->
                 </div>
             </div>
         </section>
@@ -1909,7 +1912,7 @@
                     backgroundColor: "(--bs-danger)"
                 }
             },
-            initiallyVisible: true
+            initiallyVisible: false
         });
     </script>
     <!-- ====== SCRIPT END   ====== -->
