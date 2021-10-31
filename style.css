@@ -21,10 +21,12 @@
     --additionalFontFamily: 'Cabin',
         sans-serif;
 }
-html{
-    overflow:scroll;
-    overflow-x:hidden;
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
     width: 0px;
 }
@@ -339,6 +341,7 @@ html{
 .custom-scroll-icon {
     animation: moveDown 4s infinite;
     animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    color: var(--primaryColor) !important;
 }
 
 @keyframes moveDown {
